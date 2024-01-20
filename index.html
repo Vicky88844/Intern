@@ -1,36 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GitHub Repositories</title>
-  <link rel="stylesheet" href="styles.css">
+	<title>GitHub Repositories</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-
 <body>
-  <div class="container">
-    <div class="profile">
-      <h1>John Doe</h1>
-      <p>Bio goes here</p>
-      <p>Location: Orlando</p>
-      <p>Twitter: <a href="https://twitter.com/john_doe" target="_blank">https://twitter.com/john_doe</a></p>
-      <p>GitHub: <a href="https://github.com/john_doe" target="_blank">https://github.com/john_doe</a></p>
-    </div>
-
-    <div id="loader"></div>
-
-    <ul id="repositories"></ul>
-
-    <div id="pagination">
-      <button onclick="getRepositories(1)">Newer</button>
-      <button onclick="getRepositories(2)">Older</button>
-    </div>
-
-    <input type="text" id="searchInput" onkeyup="filterRepositories()" placeholder="Search repositories...">
-  </div>
-
-  <script src="script.js"></script>
+	<div id="repository-container"></div>
+	<script src="app.js"></script>
 </body>
-
 </html>
